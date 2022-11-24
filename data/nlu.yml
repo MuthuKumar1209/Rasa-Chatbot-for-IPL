@@ -1,0 +1,203 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - cee you later
+    - happy night
+    - bye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - fine
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - no
+    - nope
+    - noo
+    - never
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: request_names
+  examples: |
+    - i want to give you my name
+    - give name
+    - you need to know my name
+    - do you know my name?
+
+- intent: welcome
+  examples: |
+    - welcome
+    - welcome note
+    - vanakam
+
+# - intent: affirm
+#   examples: |
+#     - yes
+#     - y
+#     - indeed
+#     - of course
+#     - that sounds good
+#     - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - vincent
+    - vincent-mcvincent
+
+
+
+- intent: most_winners
+  examples: |
+    - List top winners
+    - Top 10 winners
+    - Top
+    - List the winners
+    - Show me the top winners
+    - winners
+    - where winners
+
+- intent: player_of_match
+  examples: |
+    - List player of match
+    - player of match
+    - most player of match
+    - best player of match
+
+- intent: number_of_matches
+  examples: |
+    - total number of matches
+    - most matches played
+    - number of matches
+    - total matches
+
+
+- intent: all_teams
+  examples: |
+    - List all teams
+    - All the teams
+    - Suggest me all teams
+    - You suggest me the all teams
+    - Show me the all teams
+
+
+- intent: umpire_count
+  examples: |
+    - total umpire count
+    - number of umpire count
+    - umpire count
+    - umpire count in total
+    
+- intent: most_venue
+  examples: |
+    - most venue
+    - number of most venue
+    - most venue played
+    - played most venue
+
+- intent: toss_dec
+  examples: |
+    - most toss decision
+    - number of most toss decision
+    - most toss decision played
+    - win toss decision
+    - won toss decision
+
+- intent: winning_perc
+  examples: |
+    - winnig percentage
+    - number of winnig percentage
+    - need to know winnig percentage
+    - team winnig percentage
+
+- intent: toss_winner
+  examples: |
+    - most toss winner
+    - number of most venue
+    - most venue played
+    - toss most winnner
+
+
+ 

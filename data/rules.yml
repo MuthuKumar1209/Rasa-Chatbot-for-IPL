@@ -1,0 +1,102 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: welcome note
+  steps:
+  - intent: welcome
+  - action: utter_welcome
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+- rule: Activation umpire form
+  steps:
+  - intent: umpire_count
+  - action: umpire_form
+  - active_loop: umpire_form
+
+- rule: Submit umpire form
+  condition:
+  - active_loop: umpire_form
+  steps:
+  - action: umpire_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_umpire_count
+
+- rule: Activation venue form
+  steps:
+  - intent: most_venue
+  - action: venue_form
+  - active_loop: venue_form
+
+- rule: Submit venue form
+  condition:
+  - active_loop: venue_form
+  steps:
+  - action: venue_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_most_venue
+
+
+- rule: Activation toss decision form
+  steps:
+  - intent: toss_dec
+  - action: toss_decision_form
+  - active_loop: toss_decision_form
+
+- rule: Submit toss decision form
+  condition:
+  - active_loop: toss_decision_form
+  steps:
+  - action: toss_decision_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_toss_dec
+
+
+- rule: Activation winnig percentage form
+  steps:
+  - intent: winning_perc
+  - action: winning_percentage_form
+  - active_loop: winning_percentage_form
+
+- rule: Submit winnig percentage form
+  condition:
+  - active_loop: winning_percentage_form
+  steps:
+  - action: winning_percentage_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_winning_perc
+
+
+- rule: Activation toss winner form
+  steps:
+  - intent: toss_winner
+  - action: toss_winner_form
+  - active_loop: toss_winner_form
+
+- rule: Submit toss winner form
+  condition:
+  - active_loop: toss_winner_form
+  steps:
+  - action: toss_winner_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_toss_winner

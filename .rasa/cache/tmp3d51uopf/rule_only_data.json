@@ -1,0 +1,12 @@
+{
+  "rule_only_slots": [],
+  "rule_only_loops": [
+    "stock_form",
+    "umpire_form",
+    "name_form",
+    "venue_form",
+    "winning_percentage_form",
+    "toss_winner_form",
+    "toss_decision_form"
+  ]
+}

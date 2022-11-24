@@ -1,0 +1,18 @@
+[
+  {
+    "text": "never",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.48793983459472656
+    }
+  },
+  {
+    "text": "no",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6712059378623962
+    }
+  }
+]

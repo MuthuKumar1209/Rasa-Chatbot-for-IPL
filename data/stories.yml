@@ -1,0 +1,93 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  # - intent: mood_great
+  # - action: utter_happy
+  
+
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+  # - intent: affirm
+  # - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+# - story: interactive_story_2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: umpire_count
+#   - action: umpire_form
+#   - active_loop: umpire_form
+#   - slot_was_set:
+#     - requested_slot: umpire_count
+#   - slot_was_set:
+#     - umpire_count: Mumbai Indians
+#   - slot_was_set:
+#     - requested_slot: null
+#   - active_loop: null
+#   - action: action_umpire_count
+
+############################################################
+
+
+- story: most winners
+  steps:
+  - intent: most_winners
+  - action: action_most_winners
+
+- story: player_of_match
+  steps:
+  - intent: player_of_match
+  - action: action_player_of_match
+
+- story: number os matches
+  steps:
+  - intent: number_of_matches
+  - action: action_number_of_matches
+
+- story: all team
+  steps:
+  - intent: all_teams
+  - action: action_all_teams
+
+
+#   - checkpoint: check_asked_question
+# - story: handle user affirm
+#   steps:
+#   - checkpoint: check_asked_question
+#   - intent: mood_great
+#   - action: utter_great
+#   - checkpoint: check_flow_finished
+# - story: handle user deny
+#   steps:
+#   - checkpoint: check_asked_question
+#   - intent: mood_bad
+#   - action: utter_bad
+#   - checkpoint: check_flow_finished
+# - story: finish flow
+#   steps:
+#   - checkpoint: check_flow_finished
+#   - intent: goodbye
+#   - action: utter_goodbye
